@@ -33,7 +33,8 @@ const CARD_DATABASE = {
     "《PPチケット》": {
         cardId: "CS01-T01",
         type: "Tactics",
-        cost: 0
+        cost: 0,
+        effect: "PPを1回復する"
     },
     "《デッド・オア・アライブ》": {
         cardId: "CS01-T02",
