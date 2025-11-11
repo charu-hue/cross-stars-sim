@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Stars シミュレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Cross Stars 一人回しシミュレーター</h1>
+
+    <div id="setup-area">
+        <h2>ゲーム準備</h2>
+        
+        <div>
+            <h3>Player 1 デッキリスト</h3>
+            <textarea id="deck-input-p1" rows="10" cols="40" placeholder="P1のデッキリストを貼り付け..."></textarea>
+        </div>
+
+        <div>
+            <h3>Player 2 デッキリスト</h3>
+            <textarea id="deck-input-p2" rows="10" cols="40" placeholder="P2のデッキリストを貼り付け..."></textarea>
+        </div>
+
+        <button id="start-game-btn">ゲーム準備</button>
+    </div>
+
+    <div id="game-board-area" style="display: none;">
+        <h2>ゲームボード</h2>
+        <div id="p1-board">
+            <h4>Player 1</h4>
+            <div id="p1-hand">手札:</div>
+            <div id="p1-leaders">リーダー:</div>
+            <div id="p1-play-area">プレイエリア:</div>
+        </div>
+        
+        <div id="p2-board">
+            <h4>Player 2</h4>
+            <div id="p2-hand">手札:</div>
+            <div id="p2-leaders">リーダー:</div>
+            <div id="p2-play-area">プレイエリア:</div>
+        </div>
+        
+        <button id="turn-end-btn">ターン終了</button>
+    </div>
+
+
+    <script src="js/card_database.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
