@@ -15,9 +15,18 @@ const CARD_DATABASE = {
         effect_awakened: "【覚醒時】カードを1枚引く。"
 
     },
-    "《Mondo》": {
-        cardId: "CS01-L02",
+    "《うるか》": {
+        cardId: "BP01-002",
         type: "Leader",
+        color: "赤",
+
+        hp_base: 100,
+        atk_base: 30,
+
+        hp_awakened: 130,
+        atk_awakened: 40,
+        effect_awakened: "【覚醒時】カードを1枚引く。"
+
     },
 
     // --- タクティクスカードの例 ---
