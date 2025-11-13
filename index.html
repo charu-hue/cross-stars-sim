@@ -27,26 +27,53 @@
     </div>
 
     <div id="game-board-area" style="display: none;">
-        <h2>ゲームボード</h2>
-        <div id="p1-board">
-            <h4>Player 1</h4>
-            <div id="p1-hand">手札:</div>
-            <div id="p1-leaders">リーダー:</div>
-            <div id="p1-play-area">プレイエリア:</div>
+        <div class="board-container">
+
+            <div id="p2-board" class="player-board">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                    <h3 class="player-name" style="margin:0;">Player 2</h3>
+                    <div id="p2-pp" style="font-weight:bold; font-size:1.2em; background:#eee; padding:5px 10px; border-radius:4px;">PP: 0/0</div>
+                </div>
+                
+                <div class="zone-row">
+                    <span class="zone-label">HAND</span>
+                    <div id="p2-hand" style="display:flex; gap:5px;"></div>
+                </div>
+                <div class="zone-row">
+                    <span class="zone-label">PLAY</span>
+                    <div id="p2-play-area" style="display:flex; gap:5px;"></div>
+                    <div id="p2-tactics-area" style="display:flex; gap:5px; margin-left:auto;"></div>
+                </div>
+                <div class="zone-row">
+                    <span class="zone-label">LEADER</span>
+                    <div id="p2-leaders" style="display:flex; gap:10px;"></div>
+                </div>
+            </div>
+
+            <div id="p1-board" class="player-board">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                    <h3 class="player-name" style="margin:0;">Player 1</h3>
+                    <div id="p1-pp" style="font-weight:bold; font-size:1.2em; background:#eee; padding:5px 10px; border-radius:4px;">PP: 0/0</div>
+                </div>
+                
+                <div class="zone-row">
+                    <span class="zone-label">LEADER</span>
+                    <div id="p1-leaders" style="display:flex; gap:10px;"></div>
+                </div>
+                <div class="zone-row">
+                    <span class="zone-label">PLAY</span>
+                    <div id="p1-play-area" style="display:flex; gap:5px;"></div>
+                     <div id="p1-tactics-area" style="display:flex; gap:5px; margin-left:auto;"></div>
+                </div>
+                <div class="zone-row">
+                    <span class="zone-label">HAND</span>
+                    <div id="p1-hand" style="display:flex; gap:5px;"></div>
+                </div>
+            </div>
+
         </div>
-        
-        <div id="p2-board">
-            <h4>Player 2</h4>
-            <div id="p2-hand">手札:</div>
-            <div id="p2-leaders">リーダー:</div>
-            <div id="p2-play-area">プレイエリア:</div>
-        </div>
-        
-        <button id="turn-end-btn">ターン終了</button>
     </div>
 
-
-    <script src="js/card_database.js"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

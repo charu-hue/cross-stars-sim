@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>管理者用：カード追加画面</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: 0 auto; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input, select, textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+
+    <h1>🗂️ カードデータ登録</h1>
+    <p>ここからカードをデータベースに追加します。</p>
+
+    <div class="form-group">
+        <label>カードID (型番) ※必須</label>
+        <input type="text" id="inp-id" placeholder="例: CS01-001">
+    </div>
+
+    <div class="form-group">
+        <label>カード名 ※必須</label>
+        <input type="text" id="inp-name" placeholder="例: ブライアントショット">
+    </div>
+
+    <div class="form-group">
+        <label>種類</label>
+        <select id="inp-type">
+            <option value="Attack">アタック</option>
+            <option value="Memoria">メモリア</option>
+            <option value="Leader">リーダー</option>
+            <option value="Tactics">タクティクス</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>コスト (リーダーの場合は空欄)</label>
+        <input type="number" id="inp-cost" value="0">
+    </div>
+
+    <div class="form-group">
+        <label>HP (リーダーのみ)</label>
+        <input type="number" id="inp-hp">
+    </div>
+
+    <div class="form-group">
+        <label>ATK (リーダーのみ)</label>
+        <input type="number" id="inp-atk">
+    </div>
+    
+    <div class="form-group">
+        <label>効果テキスト (覚醒時効果など)</label>
+        <textarea id="inp-text" rows="3"></textarea>
+    </div>
+
+    <button id="btn-save">データベースに保存</button>
+
+    <script type="module" src="js/admin.js"></script>
+</body>
+</html>
